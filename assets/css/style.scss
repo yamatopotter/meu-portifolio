@@ -101,6 +101,7 @@ section {
         -moz-box-shadow: 10px 10px 0px 0px $preto;
         box-shadow: 10px 10px 0px 0px $preto;
         color: $azul;
+        transform: translate(-5px, -5px);
       }
     }
   }
@@ -258,6 +259,7 @@ section {
       -webkit-box-shadow: 20px 20px 0px 0px $preto;
       -moz-box-shadow: 20px 20px 0px 0px $preto;
       box-shadow: 20px 20px 0px 0px $preto;
+      transform: translate(-5px, -5px);
       color: $azul;
     }
     h2 {
