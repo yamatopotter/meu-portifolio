@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="./assets/js/main.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -15,21 +16,28 @@
             >arreto</span
           ></span
         >
-        <ul class="list-links">
+
+        <span class="menu-mobile-icon" onClick="openMenu()"
+          ><img src="./assets/img/mobile-icon.svg"
+        /></span>
+        <ul class="list-links" id="menu">
+          <span class="close-menu-mobile" onClick="closeMenu()"
+            ><img src="./assets/img/close-icon.svg"
+          /></span>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#sobre" onClick="closeMenu()">Sobre</a>
           </li>
           <li>
-            <a href="#experiencia">Experiencia</a>
+            <a href="#experiencia" onClick="closeMenu()">Experiencia</a>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <a href="#projetos" onClick="closeMenu()">Projetos</a>
           </li>
           <li>
-            <a href="#projetos">Tecnologias</a>
+            <a href="#projetos" onClick="closeMenu()">Tecnologias</a>
           </li>
           <li>
-            <a href="#contato">Contato</a>
+            <a href="#contato" onClick="closeMenu()">Contato</a>
           </li>
         </ul>
       </nav>
@@ -163,7 +171,10 @@
 
             <li>
               <h2>Pass.in - Gestão de participantes em eventos</h2>
-              <p>Backend de uma aplicação de gestão de participantes em eventos presenciais realizado no NLW Unite com Node.js</p>
+              <p>
+                Backend de uma aplicação de gestão de participantes em eventos
+                presenciais realizado no NLW Unite com Node.js
+              </p>
             </li>
 
             <li>
