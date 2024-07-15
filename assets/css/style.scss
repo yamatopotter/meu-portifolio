@@ -451,12 +451,13 @@ footer {
   }
 
   section {
-    padding: 3rem 2rem 3rem 1rem;
-    scroll-margin-top: 19vw;
+    padding: 10vw 3vw 10vw 2vw;
+    scroll-margin-top: 16vw;
   }
 
   .textbox {
     width: 90vw;
+    max-width: 90vw;
     font-size: 5vw
   }
 
@@ -490,7 +491,7 @@ footer {
   }
 
   #sobre {
-    padding-top: 35vw;
+    padding-top: 25vw;
     .title-holder {
       padding: 0;
       justify-content: center;
@@ -561,11 +562,11 @@ footer {
 
     .textbox {
       width: 100%;
-      padding: 5vw;
+      padding: 2vw 5vw;
       h2 {
-        font-size: 6vw;
+        font-size: 5vw;
         text-align: center;
-        color: $azul
+        color: $azul;
       }
       span{
         display: none;

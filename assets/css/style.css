@@ -380,11 +380,12 @@ footer {
     font-size: 1vw;
   }
   section {
-    padding: 3rem 2rem 3rem 1rem;
-    scroll-margin-top: 19vw;
+    padding: 10vw 3vw 10vw 2vw;
+    scroll-margin-top: 16vw;
   }
   .textbox {
     width: 90vw;
+    max-width: 90vw;
     font-size: 5vw;
   }
   .main-nav .list-links a {
@@ -405,7 +406,7 @@ footer {
     font-weight: 400;
   }
   #sobre {
-    padding-top: 35vw;
+    padding-top: 25vw;
   }
   #sobre .title-holder {
     padding: 0;
@@ -465,10 +466,10 @@ footer {
   }
   #contato .textbox {
     width: 100%;
-    padding: 5vw;
+    padding: 2vw 5vw;
   }
   #contato .textbox h2 {
-    font-size: 6vw;
+    font-size: 5vw;
     text-align: center;
     color: #2563eb;
   }
