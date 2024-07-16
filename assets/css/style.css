@@ -357,7 +357,7 @@ footer {
   }
 }
 @media only screen and (max-width: 1280px) {
-  html {
+  body {
     font-size: 18px;
   }
   section {
@@ -465,12 +465,13 @@ footer {
     margin-top: 0;
     margin-bottom: -15px;
   }
-  #contato .subtitle {
-    font-size: 1rem;
-  }
   #contato .contact-button-holder {
     flex-direction: column;
     gap: 32px;
+  }
+  #contato .textbox {
+    font-size: inherit;
+    width: 40vw;
   }
   footer {
     font-size: 1rem;
@@ -478,7 +479,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 1vw;
+    font-size: 5vw;
   }
   section {
     padding: 10vw 3vw 10vw 2vw;
@@ -488,6 +489,7 @@ footer {
     width: 90vw;
     max-width: 90vw;
     font-size: 5vw;
+    padding: 8vw;
   }
   .main-nav .list-links a {
     font-size: 5vw;
@@ -527,11 +529,17 @@ footer {
     font-size: 6vw;
     padding: 2vw 4vw;
   }
+  #experiencia .textbox {
+    padding: 8vw;
+  }
   #experiencia h2 {
     font-size: 5vw;
   }
   #experiencia p {
     font-size: 5vw;
+  }
+  #experiencia ul {
+    gap: 4vw;
   }
   #projetos {
     flex-direction: column;
@@ -554,16 +562,35 @@ footer {
   #projetos h1 {
     font-size: 6vw;
     text-align: center;
+    margin-bottom: 5vw;
   }
   #projetos h2 {
     font-size: 5vw;
+  }
+  #projetos ul {
+    gap: 4vw;
+  }
+  #habilidades {
+    gap: 6vw;
+  }
+  #habilidades .title-holder {
+    gap: 10vw;
+    text-align: center;
+  }
+  #habilidades .title-holder h1 {
+    font-size: 6vw;
+    width: auto;
+    padding: 3vw 6vw;
+  }
+  #contato {
+    gap: 8vw;
   }
   #contato h1 {
     font-size: 10vw;
   }
   #contato .contact-button-holder {
     flex-direction: column;
-    gap: 8vw;
+    gap: 6vw;
   }
   #contato .textbox {
     width: 100%;
