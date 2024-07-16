@@ -5,9 +5,11 @@
 $preto: #000;
 $azul: #2563eb;
 $laranja: #f97316;
+$laranja-escuro: #943e01;
 $branco: #fff;
 $rosa: #ce1b7c;
 $verde: #2ecc71;
+$verde-escuro: #05853a;
 $text-font-size: 1.3vw;
 
 // default config
@@ -53,6 +55,19 @@ section {
     color: $laranja;
     font-weight: 600;
   }
+}
+
+.gradient {
+  --size: 750px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(rgb(212, 212, 212), rgb(238, 238, 238));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 .main-nav {
@@ -181,6 +196,8 @@ section {
   justify-content: center;
   background: url("../img/bg-x-rosa.svg") no-repeat center center/cover, $rosa;
   background-size: 91%;
+  position: relative;
+  z-index: 1;
 
   h1 {
     color: $rosa;
@@ -224,7 +241,91 @@ section {
   }
 }
 
+#habilidades {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    --size: 80vw;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+    width: var(100vw);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient($rosa, $azul);
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+    z-index: -2;
+  }
+
+  .title-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-weight: 600;
+    }
+    h1 {
+      border: 3px solid $preto;
+      font-size: 2rem;
+      background: $branco;
+      padding: 1rem 2rem;
+      width: 18rem;
+      color: $rosa;
+      animation: float 5s ease-in-out infinite;
+    }
+  }
+
+  .skill-list {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    list-style-position: inside;
+    flex-wrap: wrap;
+    padding: 0 10vw;
+    justify-content: center;
+
+    li {
+      width: 15vw;
+      border: 3px solid $preto;
+      text-align: center;
+      padding: 0.5vw 0;
+      -webkit-box-shadow: 10px 10px 0px 0px $preto;
+      -moz-box-shadow: 10px 10px 0px 0px $preto;
+      box-shadow: 10px 10px 0px 0px $preto;
+      background: $branco;
+    }
+
+    .low {
+      animation: pulse-low 5s ease-in-out infinite;
+    }
+
+    .medium {
+      animation: pulse-medium 5s ease-in-out infinite;
+    }
+  }
+}
+
 #contato {
+  z-index: 2;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,6 +404,45 @@ footer {
     -moz-box-shadow: 15px 15px 0px 0px $preto;
     box-shadow: 15px 15px 0px 0px $preto;
     transform: translatey(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-low {
+  0% {
+    font-weight: 400;
+    color: $laranja;
+  }
+  50% {
+    font-weight: 600;
+    color: $laranja-escuro;
+  }
+  100% {
+    font-weight: 400;
+    color: $laranja;
+  }
+}
+
+@keyframes pulse-medium {
+  0% {
+    font-weight: 400;
+    color: $verde;
+  }
+  50% {
+    font-weight: 600;
+    color: $verde-escuro;
+  }
+  100% {
+    font-weight: 400;
+    color: $verde;
   }
 }
 
@@ -446,7 +586,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  body{
+  body {
     font-size: 1vw;
   }
 
@@ -458,14 +598,14 @@ footer {
   .textbox {
     width: 90vw;
     max-width: 90vw;
-    font-size: 5vw
+    font-size: 5vw;
   }
 
   .main-nav {
     .list-links {
       a {
         font-size: 5vw;
-        color: $azul
+        color: $azul;
       }
     }
 
@@ -514,10 +654,10 @@ footer {
       }
     }
 
-    h2{
+    h2 {
       font-size: 5vw;
     }
-    p{
+    p {
       font-size: 5vw;
     }
   }
@@ -546,7 +686,7 @@ footer {
       text-align: center;
     }
 
-    h2{
+    h2 {
       font-size: 5vw;
     }
   }
@@ -568,7 +708,7 @@ footer {
         text-align: center;
         color: $azul;
       }
-      span{
+      span {
         display: none;
       }
     }
