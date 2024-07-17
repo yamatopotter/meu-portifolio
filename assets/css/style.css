@@ -207,7 +207,6 @@ section {
   align-items: center;
   gap: 2vw;
   flex-wrap: wrap;
-  padding-bottom: 0;
 }
 #habilidades .title-holder {
   display: flex;
@@ -258,6 +257,8 @@ section {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  background-color: #2563eb;
+  color: #fff;
 }
 #contato h1 {
   color: #2ecc71;
@@ -299,10 +300,10 @@ section {
 }
 
 footer {
-  background: #2563eb;
+  background: #fff;
   padding: 2rem;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 

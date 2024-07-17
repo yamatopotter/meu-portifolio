@@ -247,7 +247,6 @@ section {
   align-items: center;
   gap: 2vw;
   flex-wrap: wrap;
-  padding-bottom: 0;
 
   .title-holder {
     display: flex;
@@ -268,7 +267,7 @@ section {
       animation: float 5s ease-in-out infinite;
     }
   }
-
+  
   .skill-list {
     display: flex;
     gap: 2vw;
@@ -277,7 +276,7 @@ section {
     flex-wrap: wrap;
     padding: 0 10vw;
     justify-content: center;
-
+    
     li {
       width: 30vh;
       border: 3px solid $preto;
@@ -288,11 +287,11 @@ section {
       box-shadow: 10px 10px 0px 0px $preto;
       background: $branco;
     }
-
+    
     .low {
       animation: pulse-low 5s ease-in-out infinite;
     }
-
+    
     .medium {
       animation: pulse-medium 5s ease-in-out infinite;
     }
@@ -305,7 +304,9 @@ section {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-
+  background-color: $azul;
+  color: #fff;
+  
   h1 {
     color: $verde;
     font-size: 5rem;
@@ -353,10 +354,10 @@ section {
 }
 
 footer {
-  background: $azul;
+  background: $branco;
   padding: 2rem;
   font-weight: 600;
-  color: $branco;
+  color: $preto;
   text-align: center;
 }
 
@@ -644,7 +645,7 @@ footer {
       font-size: 5vw;
     }
 
-    ul{
+    ul {
       gap: 4vw;
     }
   }
@@ -678,7 +679,7 @@ footer {
       font-size: 5vw;
     }
 
-    ul{
+    ul {
       gap: 4vw;
     }
   }
