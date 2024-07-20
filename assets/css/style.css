@@ -19,6 +19,14 @@ section {
   padding: 6rem 0;
 }
 
+a {
+  color: #2563eb;
+}
+
+a:visited {
+  color: #2563eb;
+}
+
 .textbox {
   background: #fff;
   border: 3px solid #000;
@@ -263,6 +271,7 @@ section {
 #contato h1 {
   color: #2ecc71;
   font-size: 5rem;
+  line-height: 5rem;
 }
 #contato h1::after {
   content: "";
@@ -466,6 +475,9 @@ footer {
     margin-top: 0;
     margin-bottom: -15px;
   }
+  #contato h1 {
+    line-height: initial;
+  }
   #contato .contact-button-holder {
     flex-direction: column;
     gap: 32px;
@@ -608,4 +620,7 @@ footer {
   footer {
     font-size: 4vw;
   }
+}
+.btn {
+  color: #2563eb;
 }/*# sourceMappingURL=style.css.map */

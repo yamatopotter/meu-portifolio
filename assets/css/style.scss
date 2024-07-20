@@ -33,6 +33,14 @@ section {
   padding: 6rem 0;
 }
 
+a {
+  color: $azul;
+}
+
+a:visited {
+  color: $azul;
+}
+
 // default components
 .textbox {
   background: $branco;
@@ -267,7 +275,7 @@ section {
       animation: float 5s ease-in-out infinite;
     }
   }
-  
+
   .skill-list {
     display: flex;
     gap: 2vw;
@@ -276,7 +284,7 @@ section {
     flex-wrap: wrap;
     padding: 0 10vw;
     justify-content: center;
-    
+
     li {
       width: 30vh;
       border: 3px solid $preto;
@@ -287,11 +295,11 @@ section {
       box-shadow: 10px 10px 0px 0px $preto;
       background: $branco;
     }
-    
+
     .low {
       animation: pulse-low 5s ease-in-out infinite;
     }
-    
+
     .medium {
       animation: pulse-medium 5s ease-in-out infinite;
     }
@@ -306,10 +314,11 @@ section {
   gap: 1.5rem;
   background-color: $azul;
   color: #fff;
-  
+
   h1 {
     color: $verde;
     font-size: 5rem;
+    line-height: 5rem;
     &::after {
       content: "";
       display: block;
@@ -548,6 +557,10 @@ footer {
   }
 
   #contato {
+    h1{
+      line-height: initial;
+    }
+    
     .contact-button-holder {
       flex-direction: column;
       gap: 32px;
@@ -724,4 +737,8 @@ footer {
   footer {
     font-size: 4vw;
   }
+}
+
+.btn {
+  color: $azul;
 }
