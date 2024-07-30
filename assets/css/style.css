@@ -601,7 +601,7 @@ footer {
     width: 100%;
   }
   #habilidades .skill-list li {
-    width: 23vh;
+    width: 45%;
   }
   #contato {
     gap: 8vw;
