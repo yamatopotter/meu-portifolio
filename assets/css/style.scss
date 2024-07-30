@@ -708,6 +708,16 @@ footer {
       gap: 10vw;
       text-align: center;
     }
+
+    .skill-list{
+      gap: 5vw;
+      padding: 0;
+      width: 100%;
+      li{
+        width:23vh;
+      }
+    }
+
   }
 
   #contato {

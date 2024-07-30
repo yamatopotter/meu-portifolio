@@ -595,6 +595,14 @@ footer {
     width: auto;
     padding: 3vw 6vw;
   }
+  #habilidades .skill-list {
+    gap: 5vw;
+    padding: 0;
+    width: 100%;
+  }
+  #habilidades .skill-list li {
+    width: 23vh;
+  }
   #contato {
     gap: 8vw;
   }
