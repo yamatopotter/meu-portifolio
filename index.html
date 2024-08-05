@@ -44,7 +44,10 @@
       content="https://matheusbarreto.dev.br/imagem.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Matheus Pereira Barreto - Desenvolvedor Frontend e Backend | Especialista em AWS e Infraestrutura</title>
+    <title>
+      Matheus Pereira Barreto - Desenvolvedor Frontend e Backend | Especialista
+      em AWS e Infraestrutura
+    </title>
   </head>
   <body>
     <header>
@@ -64,31 +67,40 @@
             ><img src="./assets/img/close-icon.svg"
           /></span>
           <li>
-            <a href="#sobre" onClick="closeMenu()">Sobre</a>
+            <a href="#about" onClick="closeMenu()" id="about-link">Sobre</a>
           </li>
           <li>
-            <a href="#experiencia" onClick="closeMenu()">Experiencia</a>
+            <a href="#experiences" onClick="closeMenu()" id="experiences-link"
+              >Experiencia</a
+            >
           </li>
           <li>
-            <a href="#projetos" onClick="closeMenu()">Projetos</a>
+            <a href="#projects" onClick="closeMenu()" id="projects-link"
+              >Projetos</a
+            >
           </li>
           <li>
-            <a href="#habilidades" onClick="closeMenu()">Habilidades</a>
+            <a href="#skills" onClick="closeMenu()" id="skills-link"
+              >Habilidades</a
+            >
           </li>
           <li>
-            <a href="#contato" onClick="closeMenu()">Contato</a>
+            <a href="#contact" onClick="closeMenu()" id="contact-link"
+              >Contato</a
+            >
           </li>
+          <li><span class="btn-idiom en" onClick="changeLanguage()" id="language-button">EN</span></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="sobre">
+      <section id="about">
         <div class="title-holder">
-          <h1>Olá!</h1>
+          <h1 id="about-title">Olá!</h1>
         </div>
         <div class="textbox">
-          <p>
+          <p id="about-description">
             Me chamo Matheus Barreto, sou técnico em informática formado pela
             FAETEC-RJ e aluno de Engenharia de Software na Universidade Estácio
             de Sá. Sou desenvolvedor Full-stack utilizando as stack Springboot,
@@ -96,8 +108,8 @@
             pessoais e com alguns clientes.
           </p>
 
-          <p>Possuo conhecimentos em:</p>
-          <ul>
+          <p id="about-knowledge-title">Possuo conhecimentos em:</p>
+          <ul id="about-knowledge-skills">
             <li>Java com <span class="highlight">Springboot</span></li>
             <li>
               React com <span class="highlight">JS</span> ou
@@ -107,7 +119,10 @@
               Conhecimento em AWS e com certificação
               <span class="highlight">Cloud Praticioner</span>
             </li>
-            <li>Conhecimento em IA Generativa com certificação <span class="highlight">Professional OCI Generative AI</span></li>
+            <li>
+              Conhecimento em IA Generativa com certificação
+              <span class="highlight">Professional OCI Generative AI</span>
+            </li>
             <li>
               Conhecimento em <span class="highlight">Gitlab CI</span> e
               <span class="highlight">Github Workflow</span>
@@ -118,17 +133,19 @@
             </li>
           </ul>
 
-          <a class="btn" href="#habilidades">Ver todas as habilidades</a>
+          <a class="btn" href="#skills" id="about-button-text"
+            >Ver todas as habilidades</a
+          >
         </div>
       </section>
 
-      <section id="experiencia">
+      <section id="experiences">
         <div class="title-holder">
-          <h1>Minha experiencia</h1>
+          <h1 id="experiences-title">Minha experiencia</h1>
         </div>
 
         <div class="textbox">
-          <ul>
+          <ul id="experiences-list">
             <li>
               <h2>Folha Vitória - ES</h2>
 
@@ -173,15 +190,15 @@
         </div>
       </section>
 
-      <section id="projetos">
+      <section id="projects">
         <div class="icon-holder">
           <span class="icon">&lt; / &gt;</span>
         </div>
 
         <div class="textbox">
-          <h1>Projetos & trabalhos</h1>
+          <h1 id="projects-title">Projetos & trabalhos</h1>
 
-          <ul>
+          <ul id="projects-list">
             <li>
               <a href="https://site.ibefes.org.br" target="_blank">
                 <h2>IBEF-ES - ES</h2>
@@ -249,8 +266,8 @@
                 <h2>Network Tester</h2>
               </a>
               <p>
-                Script que desenvolvi em Python para realizar testes continuo em redes cabeadas
-                e sem fio utilizando Raspberry Pi.
+                Script que desenvolvi em Python para realizar testes continuo em
+                redes cabeadas e sem fio utilizando Raspberry Pi.
               </p>
             </li>
 
@@ -271,10 +288,13 @@
         </div>
       </section>
 
-      <section id="habilidades">
+      <section id="skills">
         <div class="title-holder">
-          <h1>Habilidades</h1>
-          <p>Essas são as principais linguagens e tecnologias em que costumo atuar:</p>
+          <h1 id="skills-title">Habilidades</h1>
+          <p id="skills-subtitle">
+            Essas são as principais linguagens e tecnologias em que costumo
+            atuar:
+          </p>
         </div>
 
         <ul class="skill-list">
@@ -300,9 +320,9 @@
         </ul>
       </section>
 
-      <section id="contato">
-        <h1>Contato</h1>
-        <div class="subtitle">
+      <section id="contact">
+        <h1 id="contact-title">Contato</h1>
+        <div class="subtitle" id="contact-subtitle">
           <p>Você ou sua empresa precisam de alguma solução em TI?</p>
           <p>Fale comigo e vamos construir o futuro juntos!</p>
         </div>

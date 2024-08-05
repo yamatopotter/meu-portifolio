@@ -1,0 +1,117 @@
+{
+    "menu": {
+        "about": "About",
+        "experiences": "Experience",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "about": {
+        "title": "Hello!",
+        "description": "My name is Matheus Barreto. I am an IT technician graduated from FAETEC-RJ and a Software Engineering student at Universidade Estácio de Sá. I am a Full-stack developer using Springboot, React, and MySQL, and I work as a Front-end developer on personal projects and with some clients.",
+        "knowledge": {
+            "title": "I have knowledge in:",
+            "skills": [
+                "Java with <span class='highlight'>Springboot</span>",
+                "React with <span class='highlight'>JS</span> or <span class='highlight'>TS</span>",
+                "Knowledge in AWS with <span class='highlight'>Cloud Practitioner</span> certification",
+                "Knowledge in <span class='highlight'>Gitlab CI</span> and <span class='highlight'>Github Workflow</span>",
+                "Basic knowledge in automated front-end testing with <span class='highlight'>Playwright</span>",
+                "Knowledge of agile methodologies"
+            ]
+        },
+        "button": "See all skills"
+    },
+    "experiences": {
+        "title": "My Experience",
+        "my_experiences": [
+            {
+                "title": "Folha Vitória - ES",
+                "description": "I am responsible for maintaining and creating pages in Wordpress without using third-party tools."
+            },
+            {
+                "title": "KenCo Saúde - RJ",
+                "description": "I am responsible for infrastructure support, keeping workstations, servers, and the rest of the infrastructure available."
+            },
+            {
+                "title": "Évora Farma - RJ",
+                "description": "I am responsible for local infrastructure support, systems, and cloud infrastructure (AWS)."
+            },
+            {
+                "title": "IBEF-ES - ES",
+                "description": "I worked on developing two versions of the <a href='https://site.ibefes.org.br'>portal</a> for the institution."
+            },
+            {
+                "title": "Espaço Célula 1 - RJ",
+                "description": "I am responsible for local infrastructure support and automation development."
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects & Work",
+        "my_projects": [
+            {
+                "title": "IBEF-ES - ES",
+                "description": "I developed the <a href='https://site.ibefes.org.br' target='_blank'>current</a> and <a href='https://github.com/yamatopotter/IBEF-ES' target='_blank'>previous</a> layout.",
+                "link": "https://site.ibefes.org.br"
+
+            },
+            {
+                "title": "Forum Hub - Oracle Next One Program",
+                "description": "I developed the backend system using Java with Springboot for a forum, including API documentation via Swagger.",
+                "link": "https://github.com/yamatopotter/forum-hub-oracle-next-one"
+            },
+            {
+                "title": "Simple Desk - Personal Project",
+                "description": "I co-created a complete software for technicians to manage support tickets and company equipment, developing the Front-end and assisting in data modeling and system processes.",
+                "link": "https://github.com/yamatopotter/SimpleDesk"
+            },
+            {
+                "title": "Pass.in - Participant Management for Events",
+                "description": "I developed the backend of an application for managing participants in in-person events during NLW Unite.",
+                "link": "https://github.com/yamatopotter/rocketseat/tree/main/nlw-unite/node-js"
+            },
+            {
+                "title": "Network Tester",
+                "description": "I developed this Python script to perform continuous testing on wired and wireless networks.",
+                "link": "https://github.com/yamatopotter/networkTest"
+            },
+            {
+                "title": "DigitalBooking - CTD Final Project",
+                "description": "I co-developed a room booking software similar to Air BnB. I was part of the front-end and infrastructure teams.",
+                "link": "https://github.com/yamatopotter/Digital_Booking"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "subtitle": "These are the main languages and technologies I usually work with:",
+        "skills": [
+            {"name": "PHP", "class": "medium"},
+            {"name": "Wordpress", "class": "medium"},
+            {"name": "React", "class": "medium"},
+            {"name": "Bootstrap", "class": "medium"},
+            {"name": "Tailwind", "class": "medium"},
+            {"name": "TypeScript", "class": "low"},
+            {"name": "Next.js", "class": "low"},
+            {"name": "Node.js", "class": "low"},
+            {"name": "Java", "class": "medium"},
+            {"name": "Springboot", "class": "medium"},
+            {"name": "AWS", "class": "medium"},
+            {"name": "Git", "class": "medium"},
+            {"name": "Docker", "class": "low"},
+            {"name": "PostgreSQL", "class": "low"},
+            {"name": "MongoDB", "class": "low"},
+            {"name": "MySQL", "class": "medium"},
+            {"name": "Linux", "class": "medium"}
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": [
+            "Do you or your company need any IT solutions?",
+            "Get in touch with me and let's build the future together!"
+        ]
+    },
+    "footer": "Developed by Matheus - 2024"
+}
