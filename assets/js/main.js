@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(queryString);
   if (urlParams.has("lang")) {
     const language = urlParams.get("lang");
-    if (language == "en") {
+    if (language == "EN" || language == "en") {
       fetch("./assets/languages/en.json")
         .then((response) => response.json())
         .then((data) => translateSite(data));
